@@ -1,0 +1,16 @@
+[
+{
+  "modid": "RealPing",
+  "name": "RealPing",
+  "description": "用于检测服务器真实延迟",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["box"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
