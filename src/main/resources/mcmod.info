@@ -5,7 +5,7 @@
   "description": "用于检测服务器真实延迟",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://github.com/PFCraft-box/RealPing",
   "updateUrl": "",
   "authorList": ["box"],
   "credits": "",
