@@ -15,7 +15,6 @@ public class ClientChatReceivedHandler {
         String message = event.message.getFormattedText().trim();
         System.out.println(message);
         String hypixelHelpStr = "§e§lHYPIXEL服务器§r";
-//        String hypixelHelpStr = "help";
         if (message.contains(hypixelHelpStr)) {
             Load.time.setEnd(System.currentTimeMillis());
             ChatComponentText delay = new ChatComponentText(Load.time.getMs());
