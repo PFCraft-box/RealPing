@@ -24,7 +24,7 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build CIwork
-      run: ./gradlew SetupDecompWorkspace
+      run: ./gradlew -Dorg.gradle.jvmargs=-Xmx3072m setupDecompWorkspace
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew -Dorg.gradle.jvmargs=-Xmx3072m build
 
