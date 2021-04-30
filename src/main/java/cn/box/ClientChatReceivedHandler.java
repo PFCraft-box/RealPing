@@ -13,7 +13,6 @@ public class ClientChatReceivedHandler {
     @SubscribeEvent
     public void onClientChatReceivedEvent(ClientChatReceivedEvent event) {
         String message = event.message.getFormattedText().trim();
-        System.out.println(message);
         String hypixelHelpStr = "§e§lHYPIXEL服务器§r";
         if (message.contains(hypixelHelpStr)) {
             Load.time.setEnd(System.currentTimeMillis());
@@ -25,7 +24,7 @@ public class ClientChatReceivedHandler {
 
             NetHandlerPlayClient handler = player.sendQueue;
             NetworkPlayerInfo info = handler.getPlayerInfo(handler.getGameProfile().getId());
-            ChatComponentText delay2 = new ChatComponentText("服务器返回的TCP延迟:"+ info.getResponseTime());
+            ChatComponentText delay2 = new ChatComponentText("服务器返回的TCP延迟:" + info.getResponseTime());
             delay2.getChatStyle().setColor(EnumChatFormatting.GOLD);
             player.addChatMessage(delay);
             player.addChatMessage(delay2);

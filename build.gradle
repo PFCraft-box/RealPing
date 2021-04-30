@@ -20,6 +20,7 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
+
 version = "1.0"
 group= "cn.box.RealPing" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "RealPing"
@@ -63,6 +64,7 @@ dependencies {
 
 processResources
 {
+
     // this will ensure that this task is redone when the versions change.
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
